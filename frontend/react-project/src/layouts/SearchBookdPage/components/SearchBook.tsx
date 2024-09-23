@@ -23,7 +23,7 @@ export const SearchBook: React.FC<{ book: BookModel }> = (props) => {
                         )}
                     </div>
                     <div className="d-lg-none d-flex justify-content-center aign-items-center">
-                    {props.book.img ? (
+                        {props.book.img ? (
                             <img
                                 src={props.book.img}
                                 width="123"
@@ -42,15 +42,9 @@ export const SearchBook: React.FC<{ book: BookModel }> = (props) => {
                 </div>
                 <div className="col-md-6">
                     <div className="card-body">
-                        <h5 className="card-title">
-                            {props.book.author}
-                        </h5>
-                        <h4>
-                            {props.book.title}
-                        </h4>
-                        <p className="card-text">
-                            {props.book.description}
-                        </p>
+                        <h5 className="card-title">{props.book.author}</h5>
+                        <h4>{props.book.title}</h4>
+                        <p className="card-text">{props.book.description}</p>
                     </div>
                 </div>
                 <div className="col-md-4 d-flex justify-content-center align-items-center">
